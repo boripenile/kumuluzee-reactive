@@ -68,10 +68,20 @@
     </licenses>
 
     <distributionManagement>
-        <snapshotRepository>
+        <!--<snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        </snapshotRepository>-->
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/boripenile/kumuluzee-reactive</url>
+        </repository>
+        <snapshotRepository>
+          <id>github</id>
+          <name>GitHub Snapshots</name>
+          <url>https://maven.pkg.github.com/boripenile/kumuluzee-reactive</url>
+        </snapshotRepository>     
     </distributionManagement>
 
     <dependencyManagement>
